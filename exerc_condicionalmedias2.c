@@ -29,17 +29,16 @@ int main() {
 		printf("\nmedia Ponderada = %2lf\n", resultado);
 	}
 	else if (opcao == 'G' || opcao == 'g') {
-		if (a> 0 && b > 0 && c > 0) {
-			resultado = cbrt(a*b*c);
-			printf("\nmedia Geometrica = %2lf\n", resultado);
-		}
+		resultado = cbrt(a*b*c);
+		printf("\nmedia Geometrica = %2lf\n", resultado);
 	}
+
 	else if (opcao == 'H' || opcao == 'h') {
-		if (a != 0 && b != 0 && c != 0 ) {
-			resultado = 3.0 / ( (1.0/a) + (1.0/b) + (1.0/c) );
-			printf("\nmedia Harmonica = %2lf\n", resultado);
-		}
+
+		resultado = 3.0 / ( (1.0/a) + (1.0/b) + (1.0/c) );
+		printf("\nmedia Harmonica = %2lf\n", resultado);
 	}
+
 	else {
 		printf("\nopcao invalida\n");
 	}
