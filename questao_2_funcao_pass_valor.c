@@ -1,6 +1,22 @@
 #include <stdio.h>
 #include <math.h>
 
+int arredonda(float x);
+
+int main() {
+	float numero;
+
+
+	printf("Digite um numero real: ");
+	scanf("%f", &numero);
+
+
+	int resultado = arredonda(numero);
+	printf("Resultado de arredonda(%.2f) = %d\n", numero, resultado);
+
+	return 0;
+}
+
 int arredonda(float x) {
 	int inteiro_abaixo = (int)x;
 	float parte_decimal = x - inteiro_abaixo;
@@ -22,18 +38,4 @@ int arredonda(float x) {
 			return inteiro_abaixo - 1;
 		}
 	}
-}
-
-int main() {
-	float numero;
-
-
-	printf("Digite um numero real: ");
-	scanf("%f", &numero);
-
-
-	int resultado = arredonda(numero);
-	printf("Resultado de arredonda(%.2f) = %d\n", numero, resultado);
-
-	return 0;
 }
