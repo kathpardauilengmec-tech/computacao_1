@@ -22,20 +22,20 @@ int arredonda(float x) {
 	float parte_decimal = x - inteiro_abaixo;
 
 	if (x > 0) {
-		if (parte_decimal > 0.5) {
+		if (parte_decimal >= 0.5) {
 			return inteiro_abaixo + 1;
 		} else if (parte_decimal < 0.5) {
 			return inteiro_abaixo;
 		} else {
-			return inteiro_abaixo + 1;
+			return 1;
 		}
 	} else {
-		if (parte_decimal < -0.5) {
+		if (parte_decimal <= -0.5) {
 			return inteiro_abaixo - 1;
 		} else if (parte_decimal > -0.5) {
 			return inteiro_abaixo;
 		} else {
-			return inteiro_abaixo - 1;
+			return 0;
 		}
 	}
 }
