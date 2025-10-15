@@ -4,7 +4,7 @@
 
 #define LINHAS 3
 #define COLUNAS 3
-#define TAM 50
+#define TAM 51
 
 
 void inverterString(char str[]) {
@@ -38,7 +38,7 @@ int main() {
 	for (int i = 0; i < LINHAS; i++) {
 		for (int j = 0; j < COLUNAS; j++) {
 			printf("Digite a string da posiC'C#o [%d][%d]: ", i, j);
-			scanf(" %49[^\n]", matriz[i][j]);
+			scanf(" %50[^\n]", matriz[i][j]);
 			strcpy(matrizModificada[i][j], matriz[i][j]);
 		}
 	}
